@@ -73,6 +73,8 @@ h1 {
   color: var(--white-background);
   text-align: center;
   letter-spacing: 0.02em;
+  max-width: 496px;
+  margin: 0 auto;
 }
 
 .section-title,
@@ -106,7 +108,8 @@ p {
 }
 .container {
   width: 1158px;
-  margin: auto 156px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .wrap {
@@ -114,10 +117,6 @@ p {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-}
-
-section:not(:last-child) {
-  margin-bottom: 120px;
 }
 
 div.card-text {
@@ -134,9 +133,9 @@ header
 ===========================
 */
 
-header {
+.header {
   border-bottom: 1px solid var(--light);
-  padding: 24px 0;
+  padding: 24px 156px;
 }
 
 .logo {
@@ -154,7 +153,7 @@ span {
   color: var(--modal-overlay);
 }
 
-a.menu {
+.menu {
   color: var(--dark);
   font-size: 16px;
   font-weight: 500;
@@ -166,9 +165,9 @@ a.menu {
   margin-right: 40px;
 }
 
-a.menu:active,
-a.menu:hover,
-a.menu:focus {
+.menu:active,
+.menu:hover,
+.menu:focus {
   color: var(--pressed-state);
 }
 
@@ -215,6 +214,7 @@ section class="hero"
   margin: 48px auto;
   padding: 16px 32px;
   border-radius: 4px;
+  min-width: 169px;
 }
 
 .cta-button:hover,
@@ -228,11 +228,35 @@ section class="about"
 ===========================
 */
 
+.about {
+  padding: 120px 0;
+}
+
+.about-us-wrap {
+  gap: 24px;
+}
+
+.about-us-wrap {
+  flex-basis: calc((100% - 3 * 24px) / 4);
+}
+
 /* 
 ===========================
 section class="services" 
 ===========================
 */
+
+.services {
+  padding-bottom: 120px;
+}
+
+.services-wrap {
+  gap: 24px;
+}
+
+.services-item {
+  flex-basis: calc((100% - 48px) / 3);
+}
 
 /* 
 ===========================
@@ -251,6 +275,10 @@ section class="team"
   text-align: center;
 }
 
+.card:not(:last-child) {
+  margin-right: 24px;
+  flex-basis: calc((100% - 3 * 24px) / 4);
+}
 /* 
 ===========================
 footer 
@@ -265,12 +293,13 @@ footer
 .footer-text {
   color: var(--light);
   width: 264px;
-  margin-top: 16px;
 }
 .footer-logo {
   color: var(--light);
 }
-
+.footer-link {
+  margin-bottom: 16px;
+}
 /* 
 ===========================
 portfolio 
