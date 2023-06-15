@@ -65,6 +65,10 @@ section {
 base styles
 ===========================
 */
+.visually-hidden {
+  overflow: hidden;
+}
+
 .page-title,
 h1 {
   font-size: 56px;
@@ -133,7 +137,7 @@ header
 */
 
 .page-header {
-  border-bottom: 1px solid var(--accent);
+  border-bottom: 1px solid #e7e9fc;
   padding: 24px 156px;
 }
 
@@ -151,7 +155,9 @@ header
 span {
   color: var(--modal-overlay);
 }
-
+.nav-wrap {
+  align-items: center;
+}
 .menu {
   color: var(--dark);
   font-size: 16px;
@@ -228,9 +234,7 @@ section class="hero"
 section class="about" 
 ===========================
 */
-.visually-hidden {
-  overflow: hidden;
-}
+
 .about {
   padding: 120px 0;
 }
