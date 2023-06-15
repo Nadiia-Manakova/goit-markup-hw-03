@@ -50,10 +50,16 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
 ul,
 ol {
   list-style-type: none;
 }
+
+section {
+  padding: auto;
+}
+
 /* 
 ===========================
 base styles
