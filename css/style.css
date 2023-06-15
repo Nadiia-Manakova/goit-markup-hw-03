@@ -67,15 +67,16 @@ base styles
 */
 .visually-hidden {
   position: absolute;
+  white-space: nowrap;
   width: 1px;
   height: 1px;
-  margin: -1px;
+  overflow: hidden;
   border: 0;
   padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
   clip: rect(0 0 0 0);
-  overflow: hidden;
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .page-title,
@@ -176,7 +177,8 @@ span {
   font-weight: 500;
   letter-spacing: 0.02em;
   line-height: 1.5;
-  padding: 24px 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .nav-item:not(:last-child) {
