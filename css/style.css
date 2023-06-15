@@ -155,7 +155,7 @@ header
 span {
   color: var(--modal-overlay);
 }
-.nav-wrap {
+.header-wrap {
   align-items: center;
 }
 .menu {
@@ -243,7 +243,7 @@ section class="about"
   gap: 24px;
 }
 
-.about-us-wrap {
+.about-us-item {
   flex-basis: calc((100% - 72px) / 4);
 }
 
