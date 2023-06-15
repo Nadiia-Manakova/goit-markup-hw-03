@@ -132,8 +132,8 @@ header
 ===========================
 */
 
-.header {
-  border-bottom: 1px solid var(--light);
+.page-header {
+  border-bottom: 1px solid var(--accent);
   padding: 24px 156px;
 }
 
@@ -228,7 +228,9 @@ section class="hero"
 section class="about" 
 ===========================
 */
-
+.visually-hidden {
+  overflow: hidden;
+}
 .about {
   padding: 120px 0;
 }
@@ -238,7 +240,7 @@ section class="about"
 }
 
 .about-us-wrap {
-  flex-basis: calc((100% - 3 * 24px) / 4);
+  flex-basis: calc((100% - 72px) / 4);
 }
 
 /* 
@@ -306,6 +308,9 @@ footer
 portfolio 
 ===========================
 */
+.portfolio {
+  padding: 96px 0 120px 0;
+}
 
 .filters-btn {
   background-color: var(--light);
@@ -323,8 +328,8 @@ portfolio
 
 .filters-wrap {
   justify-content: center;
-  gap: 24px;
-  margin-top: 96px;
+  column-gap: 24px;
+  margin-bottom: 72px;
 }
 
 .filters-btn:hover,
@@ -332,6 +337,7 @@ portfolio
 .filters-btn:focus {
   background-color: var(--pressed-state);
   color: var(--white-background);
+  border: 1px solid transparent;
 }
 
 .gallery-card-text {
@@ -345,6 +351,5 @@ portfolio
 
 .gallery-wrap {
   flex-wrap: wrap;
-  margin: 72px auto 120px;
   row-gap: 48px;
 }
