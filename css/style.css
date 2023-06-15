@@ -152,6 +152,9 @@ a.menu {
   font-weight: 500;
   letter-spacing: 0.02em;
   line-height: 1.5;
+}
+
+.nav-item:not(:last-child) {
   margin-right: 40px;
 }
 
@@ -159,6 +162,10 @@ a.menu:active,
 a.menu:hover,
 a.menu:focus {
   color: var(--pressed-state);
+}
+
+.address-item:not(:last-child) {
+  margin-right: 40px;
 }
 
 .address {
