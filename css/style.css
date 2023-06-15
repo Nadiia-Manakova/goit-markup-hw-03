@@ -170,23 +170,22 @@ span {
   align-items: center;
 }
 
-.menu {
+.menu-link {
   color: var(--dark);
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.02em;
   line-height: 1.5;
-}
-.nav-item {
   padding: 24px 0;
 }
+
 .nav-item:not(:last-child) {
   margin-right: 40px;
 }
 
-.menu:active,
-.menu:hover,
-.menu:focus {
+.menu-link:active,
+.menu-link:hover,
+.menu-link:focus {
   color: var(--pressed-state);
 }
 
