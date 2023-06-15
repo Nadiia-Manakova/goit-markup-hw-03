@@ -124,6 +124,10 @@ div.card-text {
   padding: 32px 16px;
 }
 
+.link {
+  display: inline-block;
+}
+
 /* 
 ===========================
 header
