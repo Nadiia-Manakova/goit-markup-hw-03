@@ -116,7 +116,6 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 100%;
 }
 
 div.card-text {
@@ -179,6 +178,8 @@ span {
   font-style: normal;
 }
 
+.addres-wrap {
+}
 .contakt {
   color: var(--text);
   font-style: normal;
