@@ -94,7 +94,7 @@ h3 {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--modal-overlay);
-  margin: 32px auto 8px auto;
+  margin-bottom: 8px;
 }
 
 .list-text,
@@ -118,6 +118,10 @@ p {
 
 section:not(:last-child) {
   margin-bottom: 120px;
+}
+
+div.card-text {
+  padding: 32px 16px;
 }
 
 /* 
@@ -206,6 +210,7 @@ section class="hero"
   color: var(--white-background);
   margin: 48px auto;
   padding: 16px 32px;
+  border-radius: 4px;
 }
 
 .cta-button:hover,
@@ -236,8 +241,10 @@ section class="team"
   padding: 120px 0;
 }
 
-li.card {
+.card {
   background-color: var(--white-background);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
 }
 
 /* 
@@ -253,6 +260,8 @@ footer
 
 .footer-text {
   color: var(--light);
+  width: 264px;
+  margin-top: 16px;
 }
 .footer-logo {
   color: var(--light);
@@ -274,6 +283,14 @@ portfolio
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  border-radius: 4px;
+  padding: 12px 24px;
+}
+
+.filters-wrap {
+  justify-content: center;
+  gap: 24px;
+  margin-top: 96px;
 }
 
 .filters-btn:hover,
@@ -283,7 +300,17 @@ portfolio
   color: var(--white-background);
 }
 
-li.gallery-card {
+.gallery-card-text {
   border: 1px var(--accent) solid;
-  margin-top: 48px;
+  border-top: none;
+}
+
+.gallery-card-text > h2 {
+  text-align: left;
+}
+
+.gallery-wrap {
+  flex-wrap: wrap;
+  margin: 72px auto 120px;
+  row-gap: 48px;
 }
