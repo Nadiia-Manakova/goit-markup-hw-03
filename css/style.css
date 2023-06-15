@@ -66,6 +66,15 @@ base styles
 ===========================
 */
 .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
@@ -155,9 +164,12 @@ header
 span {
   color: var(--modal-overlay);
 }
-.header-wrap {
+.header-wrap,
+.nav-wrap,
+.addres-wrap {
   align-items: center;
 }
+
 .menu {
   color: var(--dark);
   font-size: 16px;
@@ -165,7 +177,9 @@ span {
   letter-spacing: 0.02em;
   line-height: 1.5;
 }
-
+.nav-item {
+  padding: 24px 0;
+}
 .nav-item:not(:last-child) {
   margin-right: 40px;
 }
@@ -332,8 +346,11 @@ portfolio
 
 .filters-wrap {
   justify-content: center;
-  gap: 24px;
   margin-bottom: 72px;
+}
+
+.filters-item:not(:last-child) {
+  margin-right: 24px;
 }
 
 .filters-btn:hover,
@@ -356,4 +373,5 @@ portfolio
 .gallery-wrap {
   flex-wrap: wrap;
   row-gap: 48px;
+  column-gap: 24px;
 }
